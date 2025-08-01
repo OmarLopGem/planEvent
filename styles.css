@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.header-title {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: rgb(52, 52, 52);
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    padding: 10px 15px;
+}
+
+nav li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+nav li:hover a {
+    color: black;
+}
+
+#home-title {
+    background-image: linear-gradient(90deg, #E65100, #C2185B, #0D47A1);
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding: 30px;
+}
+
+#home-title span {
+    color: rgb(0, 255, 170);
+}
+
+#photo-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+
+#photo-slide h1 {
+    margin: 0;
+}
+
+#main-photo {
+    width: 50%;
+}
+
+#slider-images {
+    display: none;
+}
