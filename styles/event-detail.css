@@ -1,0 +1,160 @@
+
+body{
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 4rem auto 4rem;
+    margin: 0 auto;
+}
+
+.musice-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.art-carousel {
+    position: relative;
+    width: 900px;
+    height: 350px;
+    margin: auto;
+    top: 4rem;
+}
+
+.art-img {
+    position: absolute;
+    transition: all 1s cubic-bezier(.4, 2, .6, 1);
+    opacity: 0.7;
+    width: 400px;
+    height: 266px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.img-center {
+    left: 250px;
+    transform: scale(1.2);
+    z-index: 3;
+    opacity: 1;
+}
+
+
+
+.img-left{
+    left: 0;
+    z-index: 1;
+}
+
+
+/* transform to left */
+.img-right{
+    left: 500px;
+    z-index: 1;
+}
+
+
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.musice-title {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid #3498db;
+    font-weight: 700;
+}
+
+.event-details h2 {
+    color: #34495e;
+    margin: 2rem 0 1rem;
+}
+
+.event-details .icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    color: #3498db;
+}
+
+.event-details span {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.event-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    padding: 1rem;
+    /* background-color: #f8f9fa; */
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.event-details iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin: 1rem 0 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-details iframe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 表单样式 */
+#rsvp-form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+#rsvp-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+#rsvp-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#rsvp-form input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+#rsvp-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#rsvp-form button:hover {
+    background-color: #2980b9;
+}
