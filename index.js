@@ -44,7 +44,20 @@ function startShow() {
     }, 2000)
 };
 
+function revealContent() {
+    document.querySelectorAll(".home-card").forEach(element => {
+        element.addEventListener("click", () => {
+            const childrenArray = Array.from(element.children);
+
+            childrenArray.forEach(child => {
+                child.classList.toggle("card-hidden");
+            })
+        })
+    })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     buttonListeners();
     startShow();
+    revealContent();
 });

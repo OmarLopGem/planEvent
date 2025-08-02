@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Registration</a></li>
+                <li><a href="registration.html">Registration</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Schedule</a></li>
             </ul>
@@ -25,24 +25,57 @@
         <div id="home-title">
             <h1>THE GREATEST <span>MUSIC</span> FESTIVAL</h1>
         </div>
-        <div id="photo-slide">
-            <button id="left"></button>
-            <button id="right"></button>
-            <h1>Photo show</h1>
-            <img id="main-photo" src="imgs/photo_one.jpg" alt="Two people recording the show with their phones with some pink smoke in the background">
-            <div id="slider-images">
-                <img src="imgs/photo_two.jpg" alt="People with their hands up in the middle of the concert with some orange lights">
-                <img src="imgs/photo_three.jpg" alt="A crowd looking at some fireworks while enjoying the concert">
-                <img src="imgs/photo_four.jpg" alt="A concert with some orange lights and people with their hands up">
+
+        <div id="image-slider-container">
+            <h1 id="slider-title">Photo show</h1>
+            <div id="photo-slide">
+                <button id="left" class="arrow-btn">
+                    <img src="imgs/left.svg" alt="Left arrow">
+                </button>
+                <img id="main-photo" src="imgs/photo_one.jpg" alt="Two people recording the show with their phones with some pink smoke in the background">
+                <div id="slider-images">
+                    <img src="imgs/photo_two.jpg" alt="People with their hands up in the middle of the concert with some orange lights">
+                    <img src="imgs/photo_three.jpg" alt="A crowd looking at some fireworks while enjoying the concert">
+                    <img src="imgs/photo_four.jpg" alt="A concert with some orange lights and people with their hands up">
+                </div>
+                <button id="right" class="arrow-btn">
+                    <img src="imgs/right.svg" alt="Right arrow">
+                </button>
             </div>
         </div>
-        <div>
+        
+        <div id="more-details">
+            <div id="details-header">
+                <h1>More details</h1>
+            </div>
+            
 
+            <div id="details-container">
+                <div class="home-card">
+                    <h2 class="">Click to reveal!</h2>
+                    <h2 class="card-hidden">Registration</h2>
+                    <p class="card-hidden">Make sure to register to get your tickets!</p>
+                    <a href="event-detail.html" class="card-hidden">Register!</a>
+                </div>
+                <div class="home-card">
+                    <h2 class="">Click to reveal!</h2>
+                    <h2 class="card-hidden">What to expect</h2>
+                    <ul class="card-hidden">
+                        <li>Food trucks</li>
+                        <li>Incredible enviroment</li>
+                        <li>Free drinks!</li>
+                    </ul>
+                </div>
+                <div class="home-card">
+                    <h2 class="">Click to reveal!</h2>
+                    <h2 class="card-hidden">Don't miss it!</h2>
+                    <p class="card-hidden">Mark it in your calendar <span>August 17th</span></p>
+                </div>
+            </div>
         </div>
-
     </main>
     <footer>
-
+        <p>&copy; Group Assignment</p>
     </footer>
     <script src="index.js"></script>
 </body>

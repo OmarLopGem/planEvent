@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <h1><a class="header-title" href="index.html">LET IT BE-AT!</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="registration-header">
+            <h1>REGISTRATION</h1>
+        </div>
+        <div id="registration-form">
+            <form action="">
+                <fieldset>
+                    <legend>User Info</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error-message">*</span>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" >
+                    <span class="error-message">*</span>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" >
+                    <span class="error-message">*</span>
+                </fieldset>
+
+                <label for="number-tickets">Number of tickets (maximum of 6 per person):</label>
+                <input type="number" id="number-tickets" name="number-tickets" >
+                <span class="error-message">*</span>
+
+                <label for="extra-food">Extra food?</label>
+                <div id="food-radio-group">
+                    <label>
+                        <input type="radio" name="extra-food" value="true" >Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="extra-food" value="false">No
+                    </label>
+                </div>
+                <span class="error-message">*</span>
+                
+                
+
+                <label for="comments">Anything you want to share with us?</label>
+                <textarea name="comments" id="comments"></textarea>
+
+                <div id="button-container">
+                    <button id="register-button" type="submit">Register</button>
+                    <button id="reset-register-button">Reset</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Group Assignment</p>
+    </footer>
+    <script src="registration.js"></script>
+</body>
+</html>
