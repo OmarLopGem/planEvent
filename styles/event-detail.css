@@ -17,7 +17,6 @@ body{
     width: 900px;
     height: 350px;
     margin: auto;
-    top: 4rem;
 }
 
 .art-img {
@@ -89,12 +88,12 @@ main{
     color: #555;
 }
 
-.event-details p {
+.event-description {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #444;
     padding: 1rem;
-    /* background-color: #f8f9fa; */
+    background-color: #f8f9fa;
     border-radius: 8px;
     border-left: 4px solid #3498db;
 }
@@ -113,7 +112,6 @@ main{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* 表单样式 */
 #rsvp-form {
     background-color: #f8f9fa;
     padding: 2rem;
@@ -129,7 +127,7 @@ main{
 }
 
 #rsvp-form input {
-    width: 100%;
+    width: 90%;
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -157,4 +155,20 @@ main{
 
 #rsvp-form button:hover {
     background-color: #2980b9;
+}
+
+.red-border {
+    border: 1px solid red !important;
+}
+
+#rsvp-form .required {
+    color: red;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+#rsvp-form .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
