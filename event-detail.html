@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/event-detail.css">
+    <link rel="stylesheet" href="styles/common.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/event-detail.js"></script>
@@ -13,7 +14,13 @@
 
 <body>
     <header>
-        <h1>Header</h1>
+        <img src="imgs/logo.svg" alt="Logo" class="logo">
+        <menu>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="">About Us</a>
+            <a href="">Schedule</a>
+        </menu>
     </header>
     <main>
         <section id="hero-images" class="art-carousel">
@@ -63,15 +70,11 @@
                 $1125 - Triple Occupancy - 3 People - 2 Queen Beds ($375 PER PERSON)
                 <br>
                 $1400 - Quad Occupancy - 4 People - 2 Queen Beds ($350 PER PERSON)
-
-            <form id="rsvp-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><span class="required">*</span>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><span class="required">*</span>
-                <button type="submit">JOIN</button>
-            </form>
         </section>
+        <section name="registration" class="registration-section">
+            <a href="registration.html" class="register-button">Register Now!</a>
+        </section>
+
     </main>
     <footer>
         <p>&copy; Group Assignment</p>

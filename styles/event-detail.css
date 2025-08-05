@@ -1,11 +1,4 @@
 
-body{
-    font-family: Arial, sans-serif;
-    display: grid;
-    grid-template-rows: 4rem auto 4rem;
-    margin: 0 auto;
-}
-
 .musice-title{
     font-size: 2rem;
     text-align: center;
@@ -171,4 +164,27 @@ main{
     color: red;
     font-size: 0.9rem;
     margin-top: 0.5rem;
+}
+
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-button {
+    width: 50%;
+    padding: 15px;
+    background-color: rgb(220, 0, 0);
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.register-button:hover {
+    background-color: rgb(149, 0, 0);
 }
