@@ -4,11 +4,16 @@ const $ = selector => document.querySelector(selector);
 
 // Function that changes the error messages when user changes input
 function changeInputCheck() {
-    document.querySelectorAll("input, textarea, select").forEach((element) => {
+    document.querySelectorAll("input, select").forEach((element) => {
         element.addEventListener("input", () => {
             element.classList.remove("input-error");
 
             element.nextElementSibling.textContent = "*";
+        })
+    })
+    document.querySelectorAll("input[name=extra-food]").forEach((radio) => {
+        radio.addEventListener("change", () => {
+            radio.parentElement.parentElement.nextElementSibling.textContent = "*";
         })
     })
 }
