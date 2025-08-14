@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/artist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+    <title>About US</title>
+</head>
+
+<body>
+    <header>
+        <img src="imgs/logo.svg" alt="Logo" class="logo">
+        <menu>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="#">Artists</a>
+            <a href="schedule.html">Schedule</a>
+        </menu>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Artists</h1>
+
+            <div class="filter-section">
+                <input type="text" id="search-input" placeholder="Search artists by name or genre...">
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="electronic">Electronic</option>
+                </select>
+            </div>
+
+            <div id="artists-grid" class="artists-grid">
+            </div>
+
+            <div id="artist-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Group Assignment</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="artist.js"></script>
+</body>
+
+</html>
